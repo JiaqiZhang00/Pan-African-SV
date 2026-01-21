@@ -1,6 +1,6 @@
 #!/bin/bash
 # ==============================================================================
-# Script Name: 04.genehancer_annotation.sh
+# Script Name: 05.genehancer_annotation.sh
 # Description: Annotate SVs with Enhancer information using GeneHancer database.
 # Tools used: bedtools
 # ==============================================================================
