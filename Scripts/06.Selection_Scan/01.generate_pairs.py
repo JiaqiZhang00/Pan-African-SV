@@ -4,7 +4,7 @@
 """
 Script Name: generate_pairs.py
 Description: Generates a list of pairwise population combinations for Fst analysis.
-Output: 'input.file' containing comma-separated pairs (e.g., pop_Amhara,pop_Chabu).
+Output: 'pairwise_populations.txt' containing comma-separated pairs (e.g., pop_Amhara,pop_Chabu).
 """
 
 import itertools
@@ -22,7 +22,7 @@ populations = [
     'pop_Tikari',
     'pop_San'
 ]
-output_filename = 'input.file'
+output_filename = 'pairwise_populations.txt'
 
 def main():
     with open(output_filename, 'w') as f:
