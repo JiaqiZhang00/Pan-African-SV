@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ==============================================================================
-# Script Name: 04.Quality_Control_after_genotyping.sh
+# Script Name: 01.quality_control.sh
 # Description: SV Quality Control Filtering.
 # Tools used: BCFtools, VCFtools v0.1.16
 # ==============================================================================
