@@ -58,5 +58,5 @@ done
 
 
 echo "Pipeline Finished."
-echo "Di Results:       ${OUTPUT_DIR}"
+echo "Di Results: ${OUTPUT_DIR}"
 echo "Top 1% Candidates: ${TOP_DIR}"
