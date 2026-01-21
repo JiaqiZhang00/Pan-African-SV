@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script Name: 02_coverage_depth.sh
+# Script Name: 02.coverage_depth.sh
 # Description: Calculate genome coverage depth for sorted BAM files using Pandepth
 # Paper Reference: "Long-read sequencing reveals a pan-African structural variation landscape driving phenotypic diversity and local adaptation."
 # Tools used: Pandepth v2.25
