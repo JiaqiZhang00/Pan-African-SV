@@ -43,7 +43,7 @@ ${PYTHON} ${VCF2PHYLIP_SCRIPT} \
 
 
 # ==========================================
-# 5. Completion & Downstream Instructions
+# 4. Completion & Downstream Instructions
 # ==========================================
 FINAL_PHY="${OUTPUT_DIR}/${OUTPUT_PREFIX}.min4.phy"
 
@@ -51,4 +51,4 @@ FINAL_PHY="${OUTPUT_DIR}/${OUTPUT_PREFIX}.min4.phy"
 echo "Preparation Finished."
 echo "Output PHYLIP file: ${FINAL_PHY}"
 #Downstream Analysis Note: We constructed the phylogenetic tree using the neighbor-joining method in MEGA (version 11), and evaluated the robustness of the phylogeny using 100 bootstraps.
-#The results of MEGA were visualized using iTOL.
+#And the results of MEGA were visualized using iTOL (version 6.5.8).
