@@ -110,3 +110,5 @@ echo "Analysis Finished."
 echo "Full CV Summary:      ${OUTPUT_DIR}/${SUMMARY_FILE}"
 echo "Best Runs List:       ${OUTPUT_DIR}/${BEST_RUNS_FILE}"
 echo "Admixture Results:    ${OUTPUT_DIR}/results/"
+
+# All runs were subsequently merged and visualized using pong (version 1.5)
