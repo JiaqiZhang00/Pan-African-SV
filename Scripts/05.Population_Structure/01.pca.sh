@@ -65,13 +65,13 @@ cat ${OUTPUT_DIR}/${PREFIX}.bim.bak | awk -v OFS='\t' '{
 # 4. Generate Parameter File (smartpca.par)
 # ==========================================
 echo "[Step 3] Generating smartpca parameter file..."
-cat <<EOF > ${PAR_FILE}
+cat <<EOF > smartpca.par
 genotypename: ${OUTPUT_DIR}/${PREFIX}.bed
 snpname:      ${OUTPUT_DIR}/${PREFIX}.bim
 indivname:    ${OUTPUT_DIR}/${PREFIX}.ind
 evecoutname:  ${OUTPUT_DIR}/${PREFIX}.evec
 evaloutname:  ${OUTPUT_DIR}/${PREFIX}.eval
-numoutevec:   10
+numoutevec:   4
 numoutlieriter: 0
 EOF
 
