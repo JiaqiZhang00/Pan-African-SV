@@ -1,6 +1,6 @@
 #!/bin/bash
 # ==============================================================================
-# Script Name: 01_paragraph_genotyping.sh
+# Script Name: 01.paragraph_genotyping.sh
 # Description: SV Genotyping using Paragraph on SRS data.
 # Tools used: Paragraph (multigrmpy.py), BCFtools
 # ==============================================================================
