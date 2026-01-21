@@ -17,17 +17,13 @@ VCFTOOLS="vcftools"
 INPUT_VCF="merge_wgs180.vcf.gz"
 # Output Configuration
 OUTPUT_DIR="./qc_output"
-# Intermediate file (Autosomes only)
+# Intermediate files
 AUTO_VCF="${OUTPUT_DIR}/Wgs180_auto.vcf.gz"
-# Final Output file (Filtered)
-FINAL_QC_VCF="${OUTPUT_DIR}/Wgs180_auto_qc_final.vcf"
+TEMP_QC_VCF="${OUTPUT_DIR}/Wgs180_auto_missing_hwe.vcf"
+# Final Output file
+FINAL_QC_VCF="${OUTPUT_DIR}/Wgs180_auto_missing_hwe_100kb.vcf"
 
-# QC Parameters
-MAX_MISSING=0.5
-HWE_THRESHOLD=0.0001
-MAF_THRESHOLD=0.05
 mkdir -p ${OUTPUT_DIR}
-
 
 # ==========================================
 # 2. Extract Autosomes
@@ -56,7 +52,9 @@ ${VCFTOOLS} \
     --hwe 0.0001 \
     --maf 0.05 \
     --recode --recode-INFO-all \
-    --stdout > ${FINAL_QC_VCF}
+    --stdout > ${TEMP_QC_VCF}
+
+bcftools view -i 'SVLEN<100000 && SVLEN>-100000' ${TEMP_QC_VCF} > ${FINAL_QC_VCF}
 COUNT_FINAL=$(grep -v "^#" ${FINAL_QC_VCF} | wc -l)
 
 echo "QC Analysis Finished."
