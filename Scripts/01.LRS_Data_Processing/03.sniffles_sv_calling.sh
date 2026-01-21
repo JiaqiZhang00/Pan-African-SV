@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script Name: 03_sniffles_sv_calling.sh
+# Script Name: 03.sniffles_sv_calling.sh
 # Description: Structural Variant calling using Sniffles2 (Single Sample & Population Mode guidelines)
 # Paper Reference: "Long-read sequencing reveals a pan-African structural variation landscape driving phenotypic diversity and local adaptation"
 # Tools used: Sniffles2 v2.0.7
