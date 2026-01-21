@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script Name: 01_winnowmap_mapping.sh
+# Script Name: 01.winnowmap_mapping.sh
 # Description: Long-read mapping using Winnowmap and BAM processing with SAMtools
 # Paper Reference: "Long-read sequencing reveals a pan-African structural variation landscape driving phenotypic diversity and local adaptation ."
 # Tools used: Winnowmap v2.03, SAMtools v1.7
