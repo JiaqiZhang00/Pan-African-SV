@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ==============================================================================
-# Script Name: 01_identify_novel_svs.sh
+# Script Name: 01.identify_novel_svs.sh
 # Description: Identify novel SVs by comparing against public SV databases.
 # Paper Reference: "Long-read sequencing reveals a pan-African structural variation landscape driving phenotypic diversity and local adaptation"
 # Tools used: BEDTools (v2.30.0)
