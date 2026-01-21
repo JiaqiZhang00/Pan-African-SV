@@ -14,7 +14,7 @@ VCFTOOLS="vcftools"
 # Input Configuration
 INPUT_VCF="Wgs180_auto_missing_hwe.vcf"
 # Python script to generate pairs
-PAIR_LIST="input.file"
+PAIR_LIST="pairwise_populations.txt"
 # Directory containing Population Sample ID files
 POP_ID_DIR="./pop_ids"
 # Output Configuration
